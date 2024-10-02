@@ -44,6 +44,10 @@
     margin-right: 0px;
     margin-bottom: 50px;
     margin-left: 0px;
+    /* here i add the background image on container */
+    background-image: url(images/about_page_background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .responsive-container-block.Container {
@@ -101,8 +105,29 @@
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 20px;
-    margin-left: 0px;
+    margin-left: 10px;
+    text-align: center;
+    color: #6F4E37; /* Coffee color */
+    animation: text-animation 3s ease-in-out infinite; /* Add animation */
+}
+/* here i add animation to ABOUT US headline of about page */
+@keyframes text-animation {
+  0% {
+      color: #6F4E37; /* Coffee color */
+      transform: scale(1);
+      text-shadow: 0 0 5px #6F4E37, 0 0 10px #6F4E37;
   }
+  50% {
+      color: #D2B48C; /* Lighter coffee color */
+      transform: scale(1.1); /* Slight scaling */
+      text-shadow: 0 0 10px #e3ae69, 0 0 20px #cf882b;
+  }
+  100% {
+      color: #6F4E37; /* Back to original coffee color */
+      transform: scale(1);
+      text-shadow: 0 0 5px #6F4E37, 0 0 10px #6F4E37;
+  }
+}
   
   .text-blk.subHeading {
     font-size: 18px;
@@ -180,8 +205,9 @@
     line-height: 20px;
     font-weight: 700;
     color: white;
-    background-color: rgb(244, 152, 146);
-    box-shadow: rgba(244, 152, 146, 0.25) 0px 10px 20px;
+    background-color: #D2B48C; /* Light Coffee Bean Color */
+    box-shadow: rgba(176, 122, 52, 0.5) 0px 10px 20px; /* Brighter Coffee Bean Shadow */
+    
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -208,6 +234,8 @@
     padding-right: 40px;
     padding-bottom: 17px;
     padding-left: 40px;
+    margin-left: 10px;
+    align-items: center;
   }
   
   .explore:hover {
@@ -220,7 +248,7 @@
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
-    background-color: rgb(244, 182, 176);
+    background-color: rgb(183, 124, 53);
   }
   
   #ixvck {
@@ -313,6 +341,7 @@
   
     .text-blk.heading {
       text-align: center;
+      margin-left: 10px;
     }
   
     .imgContainer {
